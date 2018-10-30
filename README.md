@@ -1,13 +1,16 @@
 # I Love Forms
 
-###### Pour accéder au site : 
+# LIEN
+
+###### le site:
+
 https://superiloveforms.herokuapp.com/user/new
 
 # INTRODUCTION
 
 ###### Étapes à suivre:
 
-* Faite un git clone: `https://github.com/Alexisreau97/petit-blog-des-familles`
+* Faite un git clone: `https://github.com/louismn/i-love-forms2`
 * Faite un `bundle install`
 * Et c'est partie pour la correction !
 
