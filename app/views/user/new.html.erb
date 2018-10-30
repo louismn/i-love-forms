@@ -1,0 +1,32 @@
+<h1>Hello veuillez remplir le formulaire</h1>
+
+
+
+
+<p>formulaire généré grace à la methode rails</p>
+<%= form_tag "/user", method: "post" do %>
+ 	 Prénom : <input type="text" value ="username" name="nom" /><br/>
+ 	 email : <input type="text" value ="email" name="email" /><br/>
+  	 bio : <input type="text" value ="bio" name="bio" />
+  		   <input type="submit" value="envoyer" />
+<% end %>
+<br>
+<hr>
+<br>
+
+<p>formulaire généré en html</p>
+<form method="post" action="/user">
+ 	 Prénom :<input type="text" value ="username" name="nom" /><br/>
+  	 email : <input type="text" value ="email" name="email" /><br/>
+ 	 bio : 	 <input type="text" value ="bio" name="bio" />
+		  	 <input type="submit" value="envoyer" />
+</form>
+
+<br>
+<hr>
+<br>
+
+
+<p> formulaire généré grâce à la 3ème méthode</p>
+
+
