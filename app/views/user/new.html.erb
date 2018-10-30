@@ -2,7 +2,7 @@
 
 <p>formulaire généré en html</p>
 <form method="post" action="/user">
- 	 Prénom :<input type="text" value ="username" name="nom" /><br/>
+ 	 Prénom :<input type="text" value ="username" name="username" /><br/>
   	 email : <input type="text" value ="email" name="email" /><br/>
  	 bio : 	 <input type="text" value ="bio" name="bio" />
  	 <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
@@ -15,12 +15,25 @@
 
 
 <p>formulaire généré grace à la methode rails</p>
-<%= form_tag "/user", method: "post" do %>
- 	 Prénom : <input type="text" value ="username" name="nom" /><br/>
- 	 email : <input type="text" value ="email" name="email" /><br/>
-  	 bio : <input type="text" value ="bio" name="bio" />
-  		   <input type="submit" value="envoyer" />
-<% end %>
+
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+
+      <%= label_tag 'Username' %>
+      <%= text_field_tag 'username' %>
+      <br /> <br />
+
+      <%= label_tag 'Email' %>
+      <%= text_area_tag 'email'%>
+      <br /> <br />
+
+      <%= label_tag 'Bio' %>
+      <%= text_field_tag 'bio' %>
+      <br /> <br />
+
+      <%= submit_tag "Create Post" %>
+
+    <% end %>
+
 <br>
 <hr>
 <br>
@@ -30,4 +43,13 @@
 
 <p> formulaire généré grâce à la 3ème méthode</p>
 
+<div>
+    
+<%= form_for @user, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+ username :<%= f.text_field :username %><br />
+ email: <%= f.text_field :email %><br />
+ bio: <%= f.text_area :bio, size: "40x3" %><br />
+ <%= f.submit "Create" %>
+<% end %>
 
+</div>
