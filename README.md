@@ -1,25 +1,19 @@
 # README
-Pour accéder au site : https://superiloveforms.herokuapp.com/user/new
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###### Pour accéder au site : 
+https://superiloveforms.herokuapp.com/user/new
 
-Things you may want to cover:
+# INTRODUCTION
 
-* Ruby version
+###### Étapes à suivre:
 
-* System dependencies
+* Faite un git clone: `https://github.com/Alexisreau97/petit-blog-des-familles`
+* Faite un `bundle install`
+* Et c'est partie pour la correction !
 
-* Configuration
+# TEAM
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| Nom             |Prenom    |
+| --------------- |:--------:|
+| REAU            | Alexis   |
+| Martin Du Nord  | Louis    |
